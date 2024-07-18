@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 @media  (min-width: 992px) and (max-width: 1814px){
+=======
+@media (max-width: 1814px){
+>>>>>>> a8f53db7682ae4ee753f73f0701d0d3e03ccda05
     .dots-2,
     .dots {
       position: absolute;
@@ -24,7 +28,11 @@
     
 }
 
+<<<<<<< HEAD
 @media (min-width: 992px) and (max-width: 1814px){
+=======
+@media (max-width: 1814px){
+>>>>>>> a8f53db7682ae4ee753f73f0701d0d3e03ccda05
     .dots-2,
     .dots {
       position: absolute;
@@ -49,7 +57,11 @@
 
 }
 
+<<<<<<< HEAD
 @media (min-width: 992px) and (max-width: 1488px){
+=======
+@media (max-width: 1488px){
+>>>>>>> a8f53db7682ae4ee753f73f0701d0d3e03ccda05
     .dots-2,
     .dots {
       position: absolute;
@@ -74,7 +86,11 @@
 
 }
 
+<<<<<<< HEAD
 @media (min-width: 992px) and (max-width: 1370px){
+=======
+@media (max-width: 1370px){
+>>>>>>> a8f53db7682ae4ee753f73f0701d0d3e03ccda05
     .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -130,7 +146,11 @@
       
 
 }
+<<<<<<< HEAD
 @media (min-width: 992px) and (max-width: 1250px){
+=======
+@media (max-width: 1250px){
+>>>>>>> a8f53db7682ae4ee753f73f0701d0d3e03ccda05
     .container{
         max-width: 1250px;
         width: 100%;
@@ -158,7 +178,11 @@
 
 }
 
+<<<<<<< HEAD
 @media (min-width: 768px) and (max-width: 980px) {
+=======
+@media (max-width: 815px) {
+>>>>>>> a8f53db7682ae4ee753f73f0701d0d3e03ccda05
     header .hero-section{
         padding-top: 50px;
     }
