@@ -135,7 +135,7 @@ header .hero-section .content h1::after {
 }
 header .hero-section .content h1 {
   width: 100%;
-  white-space: nowrap;
+  white-space: normal;
   font-size: 58px;
   position: relative;
   margin-top: 0;
@@ -814,6 +814,7 @@ button:hover {
   object-fit: contain;
 }
 .flower-img {
+  display: none;
   position: absolute;
   top: 38%;
   left: 0;
