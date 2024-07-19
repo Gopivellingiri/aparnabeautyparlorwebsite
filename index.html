@@ -457,13 +457,15 @@
           </p>
         </div>
         <div class="form-container">
-          <form action="#">
+          <form action="https://api.web3forms.com/submit" method="POST">
             <div class="input-group">
-              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+              <input type="hidden" name="access_key" value="7bc36b63-b900-4631-9674-444c5ef41f18">
+
+              <input type="text" id="firstName" name="firstName" placeholder="Enter your name" required />
               <input type="date" id="date" name="date" placeholder="Enter the date" required />
               <input type="email" id="email" name="email" placeholder="Enter your email" />
-              <input type="tel" id="phone" name="phone" placeholder="Phone Number" />
-              <textarea id="comments" name="comments" rows="1" cols="50" wrap="physical" placeholder="Enter Your Comments"></textarea>              <button type="submit">Send Message</button>
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
+              <textarea id="comments" name="comments" rows="1" cols="50" wrap="physical" placeholder="Enter Your Comments"></textarea> <button type="submit" id="submit">Send Message</button>
             </div>
           </form>
         </div>
@@ -478,13 +480,12 @@
           <div class="address">
             <h3>Visit Us</h3>
             <address>
-              Aparna’s Beauty Parlor 123 Beauty Street, Coimbatore, Tamil Nadu,
-              India, 641001
+              Aparna’s Beauty Parlor, D1, First floor, Sivakumar Complex, Kumaran medical upstairs, Kollupalayam pirivu, Kaniyur, Coimbatore - 641659
             </address>
           </div>
           <div class="enquires">
             <h3>Enquires</h3>
-            <p>+91 123456789</p>
+            <p>+91 7811894310</p>
             <p>Aparnabeautyparlor@gmail.com</p>
           </div>
           <div class="footer-logo">
@@ -497,7 +498,8 @@
         </div>
       </div>
     </footer>
-
+    
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
