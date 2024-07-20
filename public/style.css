@@ -13,6 +13,11 @@
   --font-color: #112a46;
   --btn-color: #ff6f61;
   --price-list: #1e2022;
+  --dark:#F7F8FD;
+  --light:#0D0D21;
+  --success:#0abf30;
+  --error:#e24dac;
+
 }
 
 html {
@@ -862,3 +867,125 @@ button:hover {
 #scrollToTopBtn:hover i {
   color: var(--light-color);
 }
+
+
+/* toast */
+
+.notification {
+  position: fixed;
+  top: 12%;
+  right: 10px;
+}
+.notification :where(.toast, .column) {
+  display: flex;
+  align-items: center;
+}
+.notification .toast {
+  position: relative;
+  width: 400px;
+  list-style: none;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 16px 17px;
+  margin-bottom: 10px;
+  background: var(--light);
+  justify-content: space-between;
+  animation: show_toast 0.3s ease forwards;
+}
+@keyframes show_toast {
+  0% {
+      transform: translateX(100%);
+  }
+  40% {
+      transform: translateX(-5%);
+  }
+  80% {
+      transform: translateX(80%);
+  }
+  100% {
+      transform: translateX(-10px);
+  }
+}
+
+.notification .toast.hide {
+  animation: hide_toast 0.3s ease forwards;
+
+}
+@keyframes hide_toast {
+  0% {
+      transform: translateX(-10px);
+  }
+  40% {
+      transform: translateX(80%);
+  }
+  80% {
+      transform: translateX(-5%);
+  }
+  100% {
+      transform: translateX(calc(100% + 20px));
+  }
+}
+
+.toast::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  animation: progress 5s linear forwards;
+}
+@keyframes progress {
+  100% {
+      width: 0%;
+  }
+}
+
+
+.toast.success .column i {
+  color: var(--success);
+}
+.toast.error .column i {
+  color: var(--error);
+}
+
+.toast .column i{
+  font-size: 1.75rem;
+}
+.toast i {
+  font-size: 1.07rem;
+}
+.toast .column span {
+  color: var(--dark);
+  font-size: 1.07rem;
+  margin-left: 12px;
+}
+.toast i:last-child {
+  color: #aeb0d7;
+  cursor: pointer;
+}
+
+.toast i:last-child:hover {
+  color: var(--dark);
+}
+
+.toast.success::before, .btn#success {
+  background: var(--success);
+}
+.toast.error::before, .btn#error {
+  background: var(--error);
+}
+
+@media screen and (max-width: 530px) {
+  .notification {
+      width: 95%;
+  }
+  .notification .toast {
+      width: 100%;
+      font-size: 1rem;
+      margin-left: 20px;
+  }
+}
+
+
+

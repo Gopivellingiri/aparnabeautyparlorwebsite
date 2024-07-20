@@ -19,6 +19,7 @@
     />
   </head>
   <body>
+    
     <nav>
       <div class="navbar">
         <div class="nav-content container">
@@ -44,6 +45,9 @@
         </div>
       
     </nav>
+
+    <ul class="notification"></ul>
+
     <header>
       <div class="hero-section container" id="hero-section">
         <div class="content">
@@ -457,9 +461,10 @@
           </p>
         </div>
         <div class="form-container">
-          <form action="https://api.web3forms.com/submit" method="POST">
+          <form id="clientForm" action="http://localhost:3000/submit" method="POST">
+            
             <div class="input-group">
-              <input type="hidden" name="access_key" value="7bc36b63-b900-4631-9674-444c5ef41f18">
+             
 
               <input type="text" id="firstName" name="firstName" placeholder="Enter your name" required />
               <input type="date" id="date" name="date" placeholder="Enter the date" required />
@@ -499,7 +504,7 @@
       </div>
     </footer>
     
-    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+   
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
